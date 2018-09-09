@@ -11,7 +11,7 @@ After each operation the table is printed showing 2 decimal places
 Before running the program you just need to hard code in the matrix you
 want to start with.
 
-Once you start the process this is an example flow of finding the Reducded Row Echelon form of a simple matrix
+Once you start the program, this is an example flow of finding the `Reduced Row Echelon Form` of a simple augmented matrix
 
 ```
 0:|    1.00    2.00    4.00 |    5.00 |
