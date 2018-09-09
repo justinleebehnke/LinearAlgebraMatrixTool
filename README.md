@@ -1,4 +1,4 @@
-# LinearAlgebraMatrixTool
+# Linear Algebra Matrix Tool
 I just wanted a basic tool for operating on matrices
 
 * It can add or subtract any two rows
@@ -127,6 +127,11 @@ Setting row 1 equal to row 1 minus row 2 is that correct? (Y/n):
 1:|    0.00    1.00    0.00 |   -1.00 |
 2:|    0.00    0.00    1.00 |    2.00 |
 ```
+
+## Future Features
+- Specify a csv file for matrix input
+- Automatically find the Echelon and reduced row Echelon forms detailing the steps taken
+- Be able to add a column to another with a temporary multiplication Ex: 'Add row 2 to row 1 but temporarily multiply row 2 by 1/4 just for this operation'
 
 ## Warning
 There are no test cases and there is almost no error handling for invalid input (beyond the scope of its purpose)
