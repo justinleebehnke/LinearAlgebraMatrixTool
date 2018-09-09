@@ -1,11 +1,9 @@
 # LinearAlgebraMatrixTool
 I just wanted a basic tool for operating on matrices
 
-It can add or subtract any two rows
-
-It can multiply or divide any given row by a non-zero constant
-
-It can switch the location of any two rows
+* It can add or subtract any two rows
+* It can multiply or divide any given row by a non-zero constant
+* It can switch the location of any two rows
 
 After each operation the table is printed showing 2 decimal places
 
