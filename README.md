@@ -11,7 +11,8 @@ After each operation the table is printed showing 2 decimal places
 Before running the program you just need to hard code in the matrix you
 want to start with.
 
-```0:|    1.00    2.00    4.00 |    5.00 |
+```
+0:|    1.00    2.00    4.00 |    5.00 |
 1:|    2.00    4.00    5.00 |    4.00 |
 2:|    4.00    5.00    4.00 |   -1.00 |
  
@@ -122,7 +123,8 @@ Setting row 1 equal to row 1 minus row 2 is that correct? (Y/n):
  
 0:|    1.00    0.00    0.00 |   -1.00 |
 1:|    0.00    1.00    0.00 |   -1.00 |
-2:|    0.00    0.00    1.00 |    2.00 |```
+2:|    0.00    0.00    1.00 |    2.00 |
+```
 
 ## Warning
 There are no test cases and there is almost no error handling for invalid input (beyond the scope of its purpose)
