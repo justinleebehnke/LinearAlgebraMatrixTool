@@ -7,9 +7,9 @@ It can switch the location of any two rows
 
 After each operation the table is printed showing 2 decimal places
 
-##Usage
+## Usage
 Before running the program you just need to hard code in the matrix you
 want to start with.
 
-##Warning
+## Warning
 There are no test cases and there is almost no error handling for invalid input (beyond the scope of its purpose)
