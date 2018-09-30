@@ -42,7 +42,7 @@ def add_rows(matrix, subtract):
         confirm = confirm.lower()
     else:
         row_to_add = input('Row to add to that row: ')
-        temp_const_to_multiply = int(input('Temporary multiply row ' + row_to_add + ' by (1): '))
+        temp_const_to_multiply = float(input('Temporary multiply row ' + row_to_add + ' by what const? (1): '))
         confirm = input('Setting row ' + row_to_modify + ' equal to the sum of row ' + row_to_modify +
                         ' and row ' + row_to_add + '(' + str(temp_const_to_multiply) + ')' + ' is that correct? (Y/n): ')
         confirm = confirm.lower()

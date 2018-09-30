@@ -8,10 +8,26 @@ I just wanted a basic tool for operating on matrices
 After each operation the table is printed showing 2 decimal places
 I have a large example below
 
+## New Feature
+- Temporarily add a non-zero const to a row before performing an addition allowing 
+a common operation to be done in one step where it used to take 3
+```
+0:|    1.00    2.00    1.00 |    0.00 |
+1:|    5.00   12.00    0.00 |    1.00 |
+ 
+Enter Command: add
+Row to store end result: 1
+Row to add to that row: 0
+Temporary multiply row 0 by what const? (1): -5
+Setting row 1 equal to the sum of row 1 and row 0(-5.0) is that correct? (Y/n): 
+ 
+0:|    1.00    2.00    1.00 |    0.00 |
+1:|    0.00    2.00   -5.00 |    1.00 |
+```
+
 ## Future Features
 - Specify a csv file for matrix input
 - Automatically find the Echelon and reduced row Echelon forms detailing the steps taken
-- Be able to add a column to another with a temporary multiplication Ex: 'Add row 2 to row 1 but temporarily multiply row 2 by 1/4 just for this operation'
 
 ## Warning
 There are no test cases and there is almost no error handling for invalid input (beyond the scope of its purpose)
@@ -21,7 +37,7 @@ Before running the program you just need to hard code in the matrix you
 want to start with.
 
 Once you start the program, this is an example flow of finding the `Reduced Row Echelon Form` of a pretty decent sized augmented matrix 
-(Note: I probably did not do a very good job solving this one because I am just starting out but the final sn wqolution is correct):
+(Note: I probably did not do a very good job solving this one because I am just starting out but the final solution is correct):
 
 ```
 0:|    4.00   -1.00    0.00   -1.00 |   30.00 |
