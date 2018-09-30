@@ -1,9 +1,13 @@
 def main():
+
+    # 1.​ (Replacement) Replace one row by the sum of itself and a multiple of another row.
+    # 2.​ (Interchange) Interchange two rows.
+    # 3.​ (Scaling) Multiply all entries in a row by a nonzero constant.
+    # I should change it to be in these terms
+
     matrix = [
-        [4.0, -1.0, 0.0, -1.0, 30.0],
-        [-1.0, 4.0, -1.0, 0.0, 60.0],
-        [0.0, -1.0, 4.0, -1.0, 70.0],
-        [-1.0, 0.0, -1.0, 4.0, 40.0]
+        [1.0, 2.0, 1.0, 0.0],
+        [5.0, 12.0, 0.0, 1.0]
     ]
 
     text = 'null'
@@ -29,6 +33,7 @@ def add_rows(matrix, subtract):
     row_to_modify = input('Row to store end result: ')
     row_to_subtract = -1
     row_to_add = -1
+    temp_const_to_multiply = 1
 
     if subtract:
         row_to_subtract = input('Row to subtract from that row: ')
@@ -37,8 +42,9 @@ def add_rows(matrix, subtract):
         confirm = confirm.lower()
     else:
         row_to_add = input('Row to add to that row: ')
+        temp_const_to_multiply = int(input('Temporary multiply row ' + row_to_add + ' by (1): '))
         confirm = input('Setting row ' + row_to_modify + ' equal to the sum of row ' + row_to_modify +
-                        ' and row ' + row_to_add + ' is that correct? (Y/n): ')
+                        ' and row ' + row_to_add + '(' + str(temp_const_to_multiply) + ')' + ' is that correct? (Y/n): ')
         confirm = confirm.lower()
 
     if confirm == 'n':
@@ -47,7 +53,7 @@ def add_rows(matrix, subtract):
         if subtract:
             subtract_row_helper(matrix, row_to_subtract, row_to_modify)
         else:
-            add_row_helper(matrix, row_to_add, row_to_modify)
+            add_row_helper(matrix, row_to_add, row_to_modify, temp_const_to_multiply)
 
 
 def subtract_row_helper(matrix, row_to_subtract, row_to_modify):
@@ -58,12 +64,12 @@ def subtract_row_helper(matrix, row_to_subtract, row_to_modify):
         matrix[row_to_modify][i] = matrix[row_to_modify][i] - matrix[row_to_subtract][i]
 
 
-def add_row_helper(matrix, row_to_add, row_to_modify):
+def add_row_helper(matrix, row_to_add, row_to_modify, temp_const_to_multiply):
     row_to_add = int(row_to_add)
     row_to_modify = int(row_to_modify)
 
     for i in range(len(matrix[row_to_modify])):
-        matrix[row_to_modify][i] = matrix[row_to_modify][i] + matrix[row_to_add][i]
+        matrix[row_to_modify][i] = matrix[row_to_modify][i] + (matrix[row_to_add][i] * temp_const_to_multiply)
 
 
 def divide(matrix):

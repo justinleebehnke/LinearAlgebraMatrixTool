@@ -21,7 +21,7 @@ Before running the program you just need to hard code in the matrix you
 want to start with.
 
 Once you start the program, this is an example flow of finding the `Reduced Row Echelon Form` of a pretty decent sized augmented matrix 
-(Note: I probably did not do a very good job solving this one because I am just starting out but the final solution is correct):
+(Note: I probably did not do a very good job solving this one because I am just starting out but the final sn wqolution is correct):
 
 ```
 0:|    4.00   -1.00    0.00   -1.00 |   30.00 |
